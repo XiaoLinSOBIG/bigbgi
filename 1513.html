@@ -3,16 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title></title>
 	<style>
 		.container {margin: 0 auto;width: 1024px; }
 		.large_font {font-size:30px; }
 		td{text-align: center; }
 		img{ border-radius:30px; }
 		.img_round {border-radius: 50%; width:350px; height:350px; }
+
+
+		/*The navigation bar*/
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			position: fixed; /*Set the navbar to fixed position */
+			top: 0; /* Position the navbar at the top of the page */
+			width: 100%; /*Full width */
+		}
+
+		/* Links inside the navbar */
+		.navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change backgrounf on mouse-over */
+		.navbar a:hover {
+			background: #ddd;
+			color:balck;
+		}
+
+
 	</style>
 </head>
 <body>
+
+	<div class="navbar">
+	  <a href="#home">回首頁</a>
+	  <a href="#s1">台中州廳</a>
+	  <a href="#s2">台中國家歌劇院</a>
+	  <a href="#s3">審計新村</a>  
+	</div>
 
 <div class="container">
 	<table>	
@@ -44,7 +79,7 @@
                 所在位置：台中市西區民權路99號
 
             <td>    	
-				<img src="02.jpeg">
+				<img id="s1" class="img_round" src="02.jpeg">
 			</td>
 		</tr>
 		<tr>
@@ -59,7 +94,7 @@
 
 			</td>
 			<td>
-				<img src="01.jpeg">
+				<img id="s2" class="img_round" src="01.jpeg">
 			</td>
 		</tr>
 		<tr>
@@ -74,11 +109,16 @@
 
 			</td>
 			<td>
-				<img src="03.jpeg">
+				<img id="s3" class="img_round" src="03.jpeg">
 			</td>
 		</tr>
 		<tr>
-			<td></td>
+			<td colspan="2">
+				<br>
+				<br>
+				<br>
+				<iframe class="rounded_corner" frameborder="0" src="https://www.google.com/maps/d/embed?mid=1ESYwxfY9FabTvbfK7y4ZCiCQzOHYF7I&ehbc=2E312F" width="1024" height="800"></iframe>
+			</td>
 			<td></td>
 		</tr>
 		<tr>
